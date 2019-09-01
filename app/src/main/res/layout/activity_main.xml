@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bd" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Birthday"
+        android:background="#C9F796EA"
+        android:textSize="20sp"
+        android:layout_above="@id/imageV" /> 
+        <ImageView
+        android:id="@+id/imageV"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pla"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageV"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:text="“A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday!”"/>
+    </RelativeLayout>
+</RelativeLayout>
